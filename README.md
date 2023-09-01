@@ -56,10 +56,25 @@ CPU0 usage on 192.168.1.12:
 
 >EXIT
 
+## Log System:
+-	Clone the entire repo to your local.
+-	Open the terminal/command prompt and point to the cloned folder's path.
+-	Create an empty folder to store the logs (if doesn't exist).
+-	Copy the path of the logs folder(DATA_PATH) where you want the program to create logs.
+-	Run the command "./generate.sh DATA_PATH"
+-	The above command will generate 1000 logs in the DATA_PATH folder for the date(2014-10-31).
+-	Then run the command "./query.sh DATA_PATH", which will prompt an interactive query tool that expects the two possible commands as mentioned below.
+-	In the interactive tool provide the command "QUERY IP cpu_id time_start time_end" to filter IPs between the start and end time. IP address should be in between ‘192.168.1.1’ - ‘192.168.4.235’.
+ -	Exapmle: QUERY 192.168.1.12 0 2014-10-31 00:00 2014-10-31 00:05
+-	In the interactive tool provide the command "EXIT"(all caps) to exit from the interactive tool.
+
 **approach** <br>
 -> implimeted .sh (bash files) to trigger execution from the terminal. <br>
 -> iterated on all the files to capture the file names and stored in another files. <br>
 -> Later applied binary search on the file name to find the needed file.<br>
 -> This way was able to accomplish the task in O(lonN) <br>
+
+
+
 
 I also have a demo video If you need it you can reach out to me on "suchandranath.bajjuri@sjsu.edu" 😃
