@@ -1,0 +1,4 @@
+# Ignore everything in this directory
+*
+#Included just to push the empty folder to git.
+!.gitignore
